@@ -1,0 +1,10 @@
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews -Indexes
+    </IfModule>
+
+    RewriteEngine On
+
+    # Serve all root requests from public
+    RewriteRule ^(.*)$ /public/$1 [NC,L,QSA]
+</IfModule>
