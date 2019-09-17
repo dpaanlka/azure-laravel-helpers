@@ -6,5 +6,5 @@
     RewriteEngine On
 
     # Serve all root requests from public
-    RewriteRule ^(.*)$ /public/$1 [NC,L,QSA]
+    RewriteRule ^.*$ /public/$1 [NC,L,QSA]
 </IfModule>
